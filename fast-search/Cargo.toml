@@ -1,6 +1,6 @@
 [package]
 name = "super-fast-search"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Rutul <rutulpatel7077@gmail.com>"]
 edition = "2018"
 

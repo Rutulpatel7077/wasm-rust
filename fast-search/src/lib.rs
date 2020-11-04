@@ -11,7 +11,7 @@ extern {
 
 // hello world for fast_search
 #[wasm_bindgen]
-pub fn fast_search(array, name: &str) {
+pub fn fast_search(array:Vec<i32>, name: i32) {
     let array_iter = array.into_iter();
-    array_iter.filter(|&&x| x == name);
+    array_iter.filter(|&x| x == name);
 }
