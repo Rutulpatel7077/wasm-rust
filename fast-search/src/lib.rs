@@ -9,7 +9,9 @@ extern {
 }
 
 
+// hello world for fast_search
 #[wasm_bindgen]
-pub fn fast_search(name: &str) {
-    log(&format!("Here is the log {}", name))
+pub fn fast_search(array, name: &str) {
+    let array_iter = array.into_iter();
+    array_iter.filter(|&&x| x == name);
 }
