@@ -4,14 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wasm Pack</title>
-    <script>
-        WebAssembly.instantiateStreaming(fetch("./utils/utils.gc.wasm"))
-        .then(wasmModule => {
-          const result = wasmModule.instance.exports.add_one(3);
-          const text = document.createTextNode(result);
-          document.body.appendChild(text);
-        });
-    </script>
+    <script async src="index.js"></script>
 </head>
 <body>
     <h1>Testing Wasm</h1>
